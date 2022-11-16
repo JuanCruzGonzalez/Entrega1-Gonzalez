@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    {% load static %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Softy Pinko - Bootstrap 4.0 Theme</title>
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'Escuela/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'Escuela/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Escuela/css/templatemo-softy-pinko.css' %}">
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{% url 'escuela-inicio' %}" class="logo" style=color:black>
+                            <h4>Inicio</h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{% url 'inicio-notas'%}">Notas</a></li>
+                            <li><a href="{% url 'inicio-alumnos'%}">Alumnos</a></li>
+                            <li><a href="{% url 'inicio-profesores' %}">Profesores</a></li>
+                            <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="welcome-area" id="welcome">
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        {% block contenidoQueCambia %}
+                        <h1>Instituto Crecer</h1>
+                        <h2 style=color:white>Una escuela distinta a las demas</h2>
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section home-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                    <a href="{% url 'inicio-alumnos' %}">
+                        <div class="col-lg-12 col-md-1 col-sm-1 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                            <div class="features-small-item">
+                                <h4 class="features-title">Alumnos</h4>
+                                <p>Ingrese para buscar o agregar alumnos</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{% url 'inicio-profesores' %}"> 
+                        <div class="col-lg-40 col-md-60 col-sm-60 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                            <div class="features-small-item">
+
+                                <h5 class="features-title">Profesores</h5>
+                                <p>Ingrese para buscar o agregar profesores</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="{% url 'inicio-notas' %}">
+                        <div class="col-lg-12 col-md-6 col-sm-60 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                            <div class="features-small-item">
+                                
+                                <h5 class="features-title">Notas</h5>
+                                <p>Ingrese para buscar o agregar Notas</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+    <!-- jQuery -->
+    <script src="{% static 'Escuela/js/jquery-2.1.0.min.js' %}"></script>
+
+
+    <!-- Plugins -->
+    <script src="{% static 'Escuela/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'Escuela/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'Escuela/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'Escuela/js/imgfix.min.js' %}"></script> 
+    
+    <!-- Global Init -->
+    <script src="{% static 'Escuela/js/custom.js' %}"></script>
+
+  </body>
+</html>

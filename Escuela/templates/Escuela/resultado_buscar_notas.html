@@ -1,0 +1,16 @@
+{% extends "Escuela/base.html" %}
+{% block contenidoQueCambia %}
+<p>
+
+
+
+
+
+
+</p>
+<ul>
+    {% for nota in notas%}
+    <li style=color:white><h4>{{nota.alumno}}-{{nota.materia}}-{{nota.nota}}</h4></li>
+    {% endfor %}
+</ul>
+{% endblock %}

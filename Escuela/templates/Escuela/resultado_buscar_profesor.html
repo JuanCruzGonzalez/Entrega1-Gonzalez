@@ -1,0 +1,16 @@
+{% extends "Escuela/base.html" %}
+{% block contenidoQueCambia %}
+<p>
+
+
+
+
+
+
+</p>
+<ul>
+    {% for profesor in profesores%}
+    <li style=color:white><h4>{{profesor.nombre}} {{profesor.apellido}}-{{profesor.materia}}</h4></li>
+    {% endfor %}
+</ul>
+{% endblock %}

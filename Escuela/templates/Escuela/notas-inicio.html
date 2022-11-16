@@ -1,0 +1,20 @@
+{% extends "Escuela/base.html" %}
+{% block contenidoQueCambia %}
+<a href="{% url 'crear-notas' %}">
+    <div class="col-lg-12 col-md-1 col-sm-1 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+        <div class="features-small-item">
+            <h4 class="features-title">Crear Notas</h4>
+            <p>Ingrese para buscar o agregar alumnos</p>
+        </div>
+    </div>
+</a>
+<a href="{% url 'buscar-notas' %}">
+    <div class="col-lg-12 col-md-6 col-sm-60 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+        <div class="features-small-item">
+            
+            <h5 class="features-title">Buscar Notas</h5>
+            <p>Ingrese para buscar o agregar Notas</p>
+        </div>
+    </div>
+</a>
+{% endblock %}

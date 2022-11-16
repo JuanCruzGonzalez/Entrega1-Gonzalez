@@ -1,0 +1,14 @@
+{% extends "Escuela/base.html" %}
+{% block contenidoQueCambia %}
+<p>
+
+
+
+</p>
+<form action="{% url 'resultado-buscar-profesores'%}" method="get">
+    <p>
+        Nombre del profesor: <input type="text" name="nombre_profesor">
+        <input type="submit" value="Buscar">
+    </p>
+</form>
+{% endblock %}
